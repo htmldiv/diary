@@ -36,7 +36,9 @@ function formatDate (time = new Date(), format = 'YY-MM-DD hh:mm:ss') {
 module.exports = {
     title: "流浪丿者",
     description: "The description of the site.",
-    head: [["link", { rel: "icon", href: `/logo.png` }]],
+    head: [
+        ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico` }]
+    ],
     base: "/",
     dest: "./dist",
     plugins: [
