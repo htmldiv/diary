@@ -50,7 +50,7 @@ module.exports = {
     themeConfig: {
         search: true,  // 是否展示搜索框
         nav: [
-            { text: "Home", link: "/" },
+            { text: "首页", link: "/" },
             { text: "VUE3-ADMIN", link: "/VUE3/" },
             { text: "JavaScript", link: "/javascript/" },
             { text: "Projects", link: "/projects/" },
