@@ -51,6 +51,7 @@ module.exports = {
         search: true,  // 是否展示搜索框
         nav: [
             { text: "Home", link: "/" },
+            { text: "VUE3-ADMIN", link: "/VUE3/" },
             { text: "JavaScript", link: "/javascript/" },
             { text: "Projects", link: "/projects/" },
             { text: "HTTP", link: "/HTTP/" },
@@ -65,6 +66,16 @@ module.exports = {
             { text: "GitHub", link: "https://github.com/htmldiv/diary.git" }
         ],
         sidebar: {
+            '/VUE3/': [
+                {
+                    title: 'vue3学习中遇到的问题',
+                    collapsable: false,
+                    children: [
+                        '',
+                        'npm',
+                    ]
+                }
+            ],
             '/javascript/': [
                 {
                     title: 'JS系列',
