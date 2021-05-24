@@ -75,6 +75,8 @@ module.exports = {
                     children: [
                         '',
                         'npm',
+                        'complain',
+                        '文档',
                     ]
                 }
             ],
