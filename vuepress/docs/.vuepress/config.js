@@ -58,11 +58,12 @@ module.exports = {
             { text: "Projects", link: "/projects/" },
             { text: "HTTP", link: "/HTTP/" },
             { // 带下拉选项的二级目录
-                text: "Module", 
+                text: "前端基础知识", 
                 ariaLabel: 'Language Menu',
                 items: [
-                  { text: '管理员端', link: '/module/config/' },
-                  { text: '操作员端', link: '/module/client/' }
+                  { text: 'CSS', link: '/module/css/' },
+                  { text: 'HTML', link: '/module/html/' },
+                  { text: '兼容性', link: '/module/compatibility/' }
                 ]
             },
             { text: "GitHub", link: "https://github.com/htmldiv/diary.git" }
@@ -91,6 +92,16 @@ module.exports = {
                     ]
                 }
             ],
+            '/projects/': [
+                {
+                    title: '常用工具',
+                    collapsable: false,
+                    children: [
+                        '',
+                        '001_lottie-web',
+                    ]
+                }
+            ],
             // 无下拉选项，但是有二级目录的导航
             '/HTTP/': [
                 {
@@ -104,25 +115,35 @@ module.exports = {
                     ]
                 }
             ],
-            '/module/config/': [
+            '/module/css/': [
                 {
-                    title: '管理员端',
+                    title: 'CSS',
                     collapsable: false,
                     children: [
                         '',
-                        'mole',
-                        'user',
+                        '000_问题合集',
+                        '001_实现带圆角的渐变边框',
                     ]
                 }
             ],
-            '/module/client/': [
+            '/module/html/': [
                 {
-                    title: '操作员端',
+                    title: 'HTML',
                     collapsable: false,
                     children: [
                         '',
                         'check',
                         'home',
+                    ]
+                }
+            ],
+            '/module/compatibility/': [
+                {
+                    title: '兼容性问题',
+                    collapsable: false,
+                    children: [
+                        '',
+                        '001_vue3+vite 安卓webview和ie11兼容问题解决',
                     ]
                 }
             ],
